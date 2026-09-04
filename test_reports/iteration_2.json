@@ -1,0 +1,23 @@
+{
+  "summary": "Full Phase 2 testing for Europort Istanbul 2026. Backend: 22/22 pytest cases pass — exhibitor facets (total=384), search (propulsion→AAA Propulsion, stand 3.112 hit), filters (Poland=10, Netherlands Pavilion=50), pagination, exhibitor detail with related[], 404 unknown slug, programme (14 sessions, sorted by day+start; Bosphorus Series=4), programme detail, news list without body (6 items), news detail includes body, partners tier grouping present for all 6 tiers, lead POST /api/leads returns 201 with email_status='skipped' (Resend key empty by design), validation (bogus type=400, no consent=400, invalid email=422), honeypot returns id=null (not stored), newsletter without consent works, /api/leads/stats returns counts, rate-limit triggers 429 on 11th request. Frontend: Home hero visible, register-link-hero external URL contains utm_source/medium/content, 3 SessionCards in chapter-programme, 3 news cards in chapter-news, all chapters present, cta-band present. window.dataLayer receives page_view and stand_enquiry_start events on home-stand-cta click. Exhibitors: count '384 results · page 1 of 16', search 'propulsion' updates URL ?q=propulsion and reduces to 4 results, country=Poland→10 with clear-country chip, pavilion=Netherlands Pavilion→50, clear-all resets, page-next → ?page=2, clicking exhibitor-card navigates to /exhibitors/:slug with exhibitor-name and back-to-directory. Programme: session-count '14 sessions', track-bosphorus-series present. Bosphorus Series page loads with 4 bosphorus-event-* sections. Lead form /exhibit/enquiry: fill+submit produces lead-success with 'Thank you. Course set.'. Footer newsletter-form → newsletter-success. Theme toggle flips html.dark. Mobile 390px: 0px horizontal overflow on /, /exhibitors, /programme/bosphorus-series; nav-menu-toggle opens mobile-menu. Bosphorus /img/*.jpg images load (naturalWidth>0). All page-title data-testids present on /exhibition, /exhibit, /visit, /news, /media, /contact; unknown route shows not-found. Zero real console errors (only a dev-tooling hydration warning about <span> inside <option> injected by the Emergent editor overlay — not app code).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": [
+    "/app/backend/tests/test_phase2.py",
+    "/app/backend/tests/backend_test.py",
+    "/app/test_reports/pytest/phase2_results.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "server.py: `@app.on_event('startup'/'shutdown')` deprecated; migrate to lifespan context manager (non-blocking).",
+    "server.py: CORS uses allow_credentials=True with allow_origins defaulting to '*' — browsers ignore credentials in that combination; set explicit origins for production.",
+    "server.py: `<span>` inside `<option>` React hydration warning is caused by the Emergent editor overlay wrapping dynamic labels; not a real bug, but may confuse future testers — worth muting the dev overlay for <option> elements."
+  ],
+  "updated_files": ["/app/backend/tests/test_phase2.py"],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "seed_data_creation": "None — seeded exhibitors/sessions/news/partners are created by backend startup (384 exhibitors, 14 sessions, 6 news, partners).",
+  "test_credentials": "N/A — no auth in this app.",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Phase 2 backend tests at /app/backend/tests/test_phase2.py (22 tests, all pass; last test test_zzz_rate_limit consumes 11 lead-slot rate-limit budget for that minute, run last as intended). Phase 1 tests at /app/backend/tests/backend_test.py still valid. Rate limit is 10/min/IP on POST /api/leads — wait 60s between suite runs. Resend integration intentionally skipped; email_status='skipped' is the expected happy path."
+}

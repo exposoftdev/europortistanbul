@@ -29,10 +29,17 @@ Turkish shipyard/supplier (exhibitor), international exhibitor / pavilion coordi
 - Home `/` Phase 2 preview: kinetic hero, countdown, marquee, stat counters, 01–08 chapter index.
 - Light/dark toggle persisted in localStorage (default dark).
 
+## Implemented — Phase 2 (June 2026)
+- Full English site: Home (8 chapters, kinetic hero w/ parallax+tilt, countdown, marquee), Exhibition (about, Facts & Figures, venue, history), Exhibit (packages, pavilions, sponsorship tiers), Visit (why, IDO travel, hotels, visa, visitor-interest form, .ics add-to-calendar), Programme (14 seeded sessions; track/day filters; session detail), Bosphorus Series brand page (Opening Crossing, Tuzla Shipyard Tour, Young Europort, Meridian Dinner), News (6 seeded articles + detail), Media (kit, boilerplate, accreditation), Partners (tiers, media partner logos), Contact, 404.
+- Exhibitor directory: 384 real 2024 exhibitors scraped from europort.com.tr, categorised heuristically; search by name/stand, filters country/category/pavilion/hall, pagination, profile page with related.
+- Lead forms (stand, sponsorship, visa, press, visitor, contact, newsletter): honeypot, consent, UTM + landing/referrer capture, rate limit 10/min, saved to Mongo `leads`, Resend team+confirmation emails (SKIPPED until RESEND_API_KEY set; LEADS_INBOX test address).
+- Tracking: window.dataLayer events (register_click, stand_enquiry_start, *_submit, exhibitor_search, exhibitor_profile_view, programme_session_view, add_to_calendar, outbound_hotel_click, partner_click, press_kit_download, theme, page_view); external registration link carries UTM.
+- Lenis smooth scroll, framer-motion reveals, generated maritime photography in /public/img.
+
 ## Backlog
-P0 (Phase 2): full marketing site pages (Exhibition, Exhibit, Visit, Exhibitors directory w/ search, Programme, News, Partners, Contact), lead forms → Mongo + Resend emails, dataLayer events, SEO schema.
-P1 (Phase 3): admin JWT login + leads panel (CSV), exhibitor/news/programme CRUD, GTM + Consent Mode v2 cookie layer, sitemap/301s, legal pages.
-P2 (Phase 4): Bosphorus Series pages, Exhibitor Press, Facts & Figures 2026, optional extra languages.
+P0 (Phase 3): admin JWT login + leads panel (CSV export), exhibitor/news/programme CRUD + CSV import, set RESEND_API_KEY + real LEADS_INBOX, GTM container + Consent Mode v2 cookie layer, sitemap/JSON-LD/301s, legal pages.
+P1: hall plan, exhibitor logos/websites from 2026 CSV, speaker names, sponsor logos.
+P2 (Phase 4): Exhibitor Press, Facts & Figures 2026, optional extra languages.
 
 ## Inputs awaited from organiser
 Vector logo, 2026 exhibitor CSV, BlueBridge/MariMatch programme, sponsor logos/tiers, photo archive, GTM/GA4/Meta/LinkedIn IDs, team contacts, legal texts, institutional welcome message.
