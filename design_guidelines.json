@@ -1,0 +1,272 @@
+{
+  "brand_identity": {
+    "brand_name": "Europort Istanbul 2026",
+    "core_concept": "Meridian (Two Continents. One Course.)",
+    "coordinates": "41°00'N 28°57'E — Yenikapı Expo Center, Istanbul",
+    "dates": "4–6 November 2026",
+    "positioning": "The premier international maritime exhibition connecting European technology with Eurasian shipbuilders, shipowners, and marine engineering powerhouses.",
+    "tone_of_voice": "Authoritative, engineer-precise, visionary, maritime-rooted. No tech jargon, no empty hype.",
+    "theme_sentence_options": [
+      {
+        "tr": "İki Kıta. Tek Rota.",
+        "en": "Two Continents. One Course.",
+        "status": "Primary / Approved"
+      },
+      {
+        "tr": "Doğu ile Batının Denizcilik Kavşağı.",
+        "en": "Where East Meets West on Maritime Waters.",
+        "status": "Alternative"
+      },
+      {
+        "tr": "Rotayı Yeniliğe Kır.",
+        "en": "Set Course for Maritime Innovation.",
+        "status": "Alternative"
+      }
+    ],
+    "benchmark_insights": {
+      "smm_hamburg": "SMM focuses on global scale and transition ('driving the maritime transition'). Europort Istanbul counters with strategic geographic consolidation and direct B2B shipyard connectivity.",
+      "posidonia_events": "Posidonia excels at shipowner prestige and national pavilions. Europort Istanbul delivers deep technical specialization and the bridge between Dutch maritime engineering and Turkish shipbuilding excellence."
+    }
+  },
+  "typography": {
+    "primary_typeface": {
+      "name": "Nunito",
+      "google_font_url": "https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap",
+      "weights": ["300 (Light)", "400 (Regular)", "600 (SemiBold)", "700 (Bold)", "800 (ExtraBold)", "900 (Black)"],
+      "usage": "Main headings, subheadings, interface elements, CTAs, navigation, body copy"
+    },
+    "accent_technical_typeface": {
+      "name": "IBM Plex Mono",
+      "google_font_url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap",
+      "weights": ["400 (Regular)", "500 (Medium)", "600 (SemiBold)"],
+      "usage": "Technical coordinates, booth numbers, date stamps, stat numbers, nautical code metadata"
+    },
+    "hierarchy_rules": {
+      "hero_h1": "text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.08]",
+      "section_h2": "text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight",
+      "subsection_h3": "text-xl sm:text-2xl font-bold tracking-tight",
+      "widget_h4": "text-lg sm:text-xl font-bold",
+      "body_lead": "text-lg sm:text-xl font-normal leading-relaxed",
+      "body_default": "text-base font-normal leading-relaxed",
+      "body_small": "text-sm font-normal",
+      "technical_tag": "font-mono text-xs uppercase tracking-[0.2em] font-medium"
+    }
+  },
+  "colors": {
+    "archetype": "Maritime Technical Corporate & Authority",
+    "theme_modes": {
+      "dark_theme": {
+        "description": "Europort Signature Navy depth with nautical luminous accents",
+        "tokens": {
+          "--background": "220 86% 19%",
+          "--background_hex": "#07255C",
+          "--foreground": "210 30% 98%",
+          "--foreground_hex": "#F8FAFC",
+          "--card": "220 78% 15%",
+          "--card_hex": "#051D4A",
+          "--card_foreground": "210 30% 98%",
+          "--popover": "220 78% 15%",
+          "--popover_foreground": "210 30% 98%",
+          "--primary": "239 25% 58%",
+          "--primary_hex": "#797AAF",
+          "--primary_foreground": "220 86% 19%",
+          "--secondary": "220 60% 25%",
+          "--secondary_hex": "#10357A",
+          "--secondary_foreground": "210 30% 98%",
+          "--muted": "220 50% 22%",
+          "--muted_foreground": "220 20% 75%",
+          "--accent_signal": "15 90% 55%",
+          "--accent_signal_hex": "#EA580C",
+          "--border": "220 50% 28%",
+          "--input": "220 50% 28%",
+          "--ring": "239 25% 58%"
+        }
+      },
+      "light_theme": {
+        "description": "Crisp nautical chart paper with Europort Navy contrast",
+        "tokens": {
+          "--background": "210 25% 98%",
+          "--background_hex": "#F8FAFC",
+          "--foreground": "220 86% 19%",
+          "--foreground_hex": "#07255C",
+          "--card": "0 0% 100%",
+          "--card_hex": "#FFFFFF",
+          "--card_foreground": "220 86% 19%",
+          "--popover": "0 0% 100%",
+          "--popover_foreground": "220 86% 19%",
+          "--primary": "220 86% 19%",
+          "--primary_hex": "#07255C",
+          "--primary_foreground": "0 0% 100%",
+          "--secondary": "239 25% 58%",
+          "--secondary_hex": "#797AAF",
+          "--secondary_foreground": "220 86% 19%",
+          "--muted": "210 20% 94%",
+          "--muted_foreground": "220 25% 42%",
+          "--accent_signal": "15 90% 55%",
+          "--accent_signal_hex": "#EA580C",
+          "--border": "214 20% 88%",
+          "--input": "214 20% 88%",
+          "--ring": "220 86% 19%"
+        }
+      }
+    },
+    "brand_palette_table": [
+      {
+        "name": "Europort Navy (Bosphorus Abyss)",
+        "hex": "#07255C",
+        "rgb": "rgb(7, 37, 92)",
+        "hsl": "hsl(220, 86%, 19%)",
+        "cmyk": "100, 85, 25, 45",
+        "role": "Primary Dark background, dominant brand authority anchor, header in light mode"
+      },
+      {
+        "name": "Europort Periwinkle (Navigation Light)",
+        "hex": "#797AAF",
+        "rgb": "rgb(121, 122, 175)",
+        "hsl": "hsl(239, 25%, 58%)",
+        "cmyk": "50, 45, 10, 0",
+        "role": "Secondary brand hue, badges, interactive borders, subheadings, secondary buttons"
+      },
+      {
+        "name": "Maritime Signal Orange (Beacon Accent)",
+        "hex": "#EA580C",
+        "rgb": "rgb(234, 88, 12)",
+        "hsl": "hsl(15, 90%, 55%)",
+        "cmyk": "0, 75, 100, 0",
+        "role": "Single high-visibility CTA kinetic trigger (Book Stand, Register), countdown pulse, live indicator"
+      },
+      {
+        "name": "Chart Crisp White",
+        "hex": "#FFFFFF",
+        "rgb": "rgb(255, 255, 255)",
+        "hsl": "hsl(0, 0%, 100%)",
+        "cmyk": "0, 0, 0, 0",
+        "role": "Light mode card backgrounds, dark mode maximum contrast headers"
+      },
+      {
+        "name": "Nautical Slate / Mist",
+        "hex": "#E2E8F0",
+        "rgb": "rgb(226, 232, 240)",
+        "hsl": "hsl(214, 32%, 91%)",
+        "cmyk": "12, 8, 5, 0",
+        "role": "Subtle borders, bathymetric contour lines, tabular dividers"
+      }
+    ]
+  },
+  "graphic_language_and_visual_enhancers": {
+    "bathymetry_contour_lines": "Subtle SVG topography depth curves at 8-12% opacity behind key hero and feature headers.",
+    "nautical_grid_coordinates": "Fine 1px dotted border-lines with lat/long markers (41°00'N 28°57'E) in corner junctions.",
+    "international_signal_flags": "Geometric maritime code flag accents (Bravo, Charlie, Delta, Zulu) subtly utilized in country pavilions and section separators.",
+    "compass_rose_and_bearings": "Minimalist geometric vector compass rose rotating slowly (60s loop) in background overlays.",
+    "texture_strategy": "Subtle ultra-fine film grain overlay (2% opacity) to give physical substance to dark navy surfaces.",
+    "numbered_editorial_flow": "Rigid two-digit numbering badges ('01 // WHY ISTANBUL', '02 // THE SHOW IN NUMBERS', '03 // EXHIBIT', etc.) rendered in IBM Plex Mono with periwinkle accent borders."
+  },
+  "image_urls": {
+    "hero_and_keynote": [
+      {
+        "category": "hero_vessel",
+        "title": "Bosphorus Modern Container Vessel",
+        "image_url": "https://images.unsplash.com/photo-1718247898951-3233995ee2f6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHw0fHxjYXJnbyUyMGNvbnRhaW5lciUyMHNoaXAlMjBzZWElMjBvY2VhbiUyMG1hcml0aW1lfGVufDB8fHx8MTc4ODQ3OTE3OXww&ixlib=rb-4.1.0&q=85",
+        "usage": "Main Hero Section background with smooth gradient mask (bg-gradient-to-r from-[#07255C]/90 via-[#07255C]/60 to-transparent)"
+      },
+      {
+        "category": "shipyard_engineering",
+        "title": "Tuzla Heavy Vessel Drydock Engineering",
+        "image_url": "https://images.unsplash.com/photo-1602575051429-c502cac0d3e8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwzfHxzaGlweWFyZCUyMGRyeWRvY2slMjBtYXJpbmUlMjBlbmdpbmVlciUyMHZlc3NlbHxlbnwwfHx8fDE3ODg0NzkxODZ8MA&ixlib=rb-4.1.0&q=85",
+        "usage": "Why Exhibit / Shipbuilding & Tuzla Shipyard section spotlight"
+      },
+      {
+        "category": "bosphorus_strait",
+        "title": "Istanbul Bosphorus Maritime Gateway",
+        "image_url": "https://images.unsplash.com/photo-1766826236680-dc2f5529bac5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwyfHxib3NwaG9ydXMlMjBpc3RhbmJ1bCUyMHNoaXB5YXJkJTIwbWFyaXRpbWUlMjBwb3J0fGVufDB8fHx8MTc4ODQ3OTE3OXww&ixlib=rb-4.1.0&q=85",
+        "usage": "Why Istanbul & Yenikapı Location showcase"
+      },
+      {
+        "category": "commercial_port",
+        "title": "Harbor Crane & Ferry Infrastructure",
+        "image_url": "https://images.unsplash.com/photo-1764847260818-a95e6c04d119?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwxfHxib3NwaG9ydXMlMjBpc3RhbmJ1bCUyMHNoaXB5YXJkJTIwbWFyaXRpbWUlMjBwb3J0fGVufDB8fHx8MTc4ODQ3OTE3OXww&ixlib=rb-4.1.0&q=85",
+        "usage": "Visiting & Transportation / Free Tuzla-Yenikapı Ferry shuttle"
+      },
+      {
+        "category": "tugboat_marine_ops",
+        "title": "High Performance Offshore Tugboat",
+        "image_url": "https://images.unsplash.com/photo-1605676103133-df5f92882cae?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHw0fHxzaGlweWFyZCUyMGRyeWRvY2slMjBtYXJpbmUlMjBlbmdpbmVlciUyMHZlc3NlbHxlbnwwfHx8fDE3ODg0NzkxODZ8MA&ixlib=rb-4.1.0&q=85",
+        "usage": "BlueBridge Maritime Forum & MariMatch B2B sessions"
+      },
+      {
+        "category": "aerial_carrier",
+        "title": "Global Shipping Line Container Vessel",
+        "image_url": "https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMGNvbnRhaW5lciUyMHNoaXAlMjBzZWElMjBvY2VhbiUyMG1hcml0aW1lfGVufDB8fHx8MTc4ODQ3OTE3OXww&ixlib=rb-4.1.0&q=85",
+        "usage": "Post Show Report & Global Footprint Stat showcase"
+      }
+    ],
+    "official_logos": {
+      "europort_navy": "/logo-europort-istanbul-navy.png",
+      "europort_white": "/logo-europort-istanbul-white.png"
+    }
+  },
+  "layout_and_architecture": {
+    "grid_system": "MODE A: Tetris Grid with asymmetric editorial tension. 12-column master grid on desktop (col-span-8 dominant visuals, col-span-4 technical feeds, col-span-2 micro metrics).",
+    "spacing_scale": "Tailwind generous spacing: p-6 to p-12 for cards, py-20 to py-28 for full sections. Strict internal padding to guarantee 0% border text collision.",
+    "containers": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "card_surfaces": "1px crisp solid border (border-[#797AAF]/20 in dark mode, border-slate-200 in light mode) with sharp or subtle rounded-lg geometry (max 8px radius)."
+  },
+  "motion_and_interaction": {
+    "principles": "Controlled maritime kinetic discipline. Zero playful bouncy easing. Easing formula: cubic-bezier(0.16, 1, 0.3, 1) ('expoOut').",
+    "components": {
+      "hero_line_reveal": "Masked slide-up reveal with staggered delay for coordinates and headline.",
+      "editorial_ribbon": "Continuous slow drifting ticker (velocity: 25s per cycle) showcasing pavilion nations and leading exhibitors.",
+      "stat_counters": "Dynamic numeric increment with IBM Plex Mono format.",
+      "theme_toggle": "Instantaneous theme transition with CSS custom properties, retaining state in localStorage."
+    }
+  },
+  "component_specifications": {
+    "header_nav": {
+      "spec": "Crystal glassmorphic bar (backdrop-blur-xl bg-[#07255C]/80 in dark mode, bg-white/80 in light mode) with 1px bottom border. Contains Official Logo + Navigation links + Live Theme Switcher + Primary CTA ('Book Your Stand').",
+      "test_id": "main-navbar"
+    },
+    "brand_hub_page": {
+      "path": "/brand",
+      "sections": [
+        "Brand Strategy & Vision (Meridian narrative, 41°N 29°E)",
+        "Official Logo Specifications (Navy/White versions, safe area 1X, minimum sizes 32mm/120px, misuse rules)",
+        "Color System (Live HEX/RGB/CMYK/Pantone viewer with copy-to-clipboard)",
+        "Typography Matrix (Nunito + IBM Plex Mono scales and pairings)",
+        "Global Benchmark Insights (SMM Hamburg & Posidonia comparison)",
+        "Component Library Showcase (Buttons, stat cards, quote band, signal badge, form fields)",
+        "Physical & Digital Mockups (Executive Badge, Foil-stamped Business Card, LinkedIn Banner, VIP Letterhead)"
+      ]
+    },
+    "marketing_homepage": {
+      "path": "/",
+      "sections": [
+        "00 // HERO: Kinetic headline 'Two Continents. One Course.', Countdown to Nov 4 2026, Dual CTA (Book Stand / Visitor Registration)",
+        "01 // WHY ISTANBUL: The Bosphorus crossroads, Tuzla & Yalova shipyard proximity, €4.2B market leverage",
+        "02 // SHOW IN NUMBERS: 440+ Exhibitors, 35+ Nations, 7,000+ Marine Professionals, 80% Retention Rate",
+        "03 // EXHIBIT: Stand packages (Standard, LightBox, Deluxe Maxima), ROI metrics, Interactive Stand Calculator",
+        "04 // VISIT: Why visit, Free Tuzla-Yenikapı Ferry schedule, Yenikapı Expo access, Visa Support Letter",
+        "05 // PROGRAMME: BlueBridge Maritime Forum, MariMatch B2B matchmaking schedule and speaker preview",
+        "06 // COUNTRY PAVILIONS: Netherlands Maritime Technology, China Shipbuilding, Poland Marine, Africa Desk",
+        "07 // SECTOR NEWS & MEDIA: Turkish Maritime Sector insights, Press accreditation, Download Brochure",
+        "08 // PARTNERS & SPONSORS: Tiered partner showcase (Platinum, Gold, Silver, Media, Institutional)",
+        "09 // LEAD CONVERSION FORMS: Stand Enquiry, Sponsorship Deck Request, Visa Assistance, Newsletter",
+        "10 // FOOTER: Massive brand signature, legal & GDPR/KVKK compliance, live Bosphorus coordinate stamp"
+      ]
+    },
+    "admin_leads_panel": {
+      "path": "/admin",
+      "description": "Full leads command center for incoming stand requests, sponsorship enquiries, and newsletter subs with filterable table and CSV export."
+    }
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": {
+    "rules": [
+      "Follow .js and .jsx conventions (React 19 + Tailwind CSS + Lucide Icons + Framer Motion).",
+      "Never use generic AI fonts (Inter, Roboto, Arial, Space Grotesk). Headings and body MUST use Nunito; Technical labels and coordinates MUST use IBM Plex Mono.",
+      "Strictly preserve brand colors: Europort Navy #07255C, Europort Periwinkle #797AAF, Signal Orange #EA580C, Crisp White #FFFFFF.",
+      "No violet/purple/pink neon gradients. Use crisp solid lines, bathymetric vectors, and subtle film grain.",
+      "Every interactive element and key text MUST have a data-testid attribute.",
+      "Light mode and Dark mode must both be fully supported and toggled smoothly.",
+      "All text in the user interface must be in English (per explicit prompt requirement)."
+    ]
+  }
+}
